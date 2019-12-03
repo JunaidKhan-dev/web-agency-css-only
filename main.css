@@ -12,3 +12,107 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 62.5%;
+}
+
+body{
+ font-family: 'Roboto', sans-serif;
+ font-size: 1.6rem;
+}
+
+nav ul{
+  list-style-type: none;
+  border-top: 6px solid #e6af2e;
+  background: #191716;
+}
+
+nav ul li a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1.5rem 2.5rem;
+  color: #e6af2e;
+}
+
+nav ul li a:hover{
+  color: #e0e2db;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 4rem;
+  background: #e6af2e;
+  color: #191716;
+  font-style: italic;
+}
+.logo:hover{
+  background: #e0e2db;
+  color: #e6af2e;
+}
+
+@media screen and (min-width:576px){
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  nav ul li{
+    flex: 1 0 auto;
+  }
+
+  .logo{
+    display: block;
+    text-align: center;
+  }
+  .logo .fa{
+    display: none;
+  }
+}
+
+/* banner */
+#banner{
+  min-height: 90vh;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/background-banner.jpg') center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text{
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #e0e2db;
+  font-style: italic;
+}
+
+.banner_underline{
+  width: 20rem;
+  border: 3px solid #191716;
+  margin: 1rem auto 2rem;
+}
+
+.banner-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-btn button{
+  font-size: 3rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  background: transparent;
+  color: #e6af2e;
+  border: 2px solid #e6af2e;
+}
+.banner-btn button:hover{
+  color: #e0e2db;
+  background: #e6af2e;
+}
+/* end of banner */
